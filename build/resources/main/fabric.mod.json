@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "tnteventborukva",
+  "version": "1.0-SNAPSHOT",
+  "name": "TNTEventBorukva",
+  "description": "Dla Zefira test",
+  "authors": ["fiv"],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/tnteventborukva/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "net.fiv.tnteventborukva.Tnteventborukva"
+    ]
+  },
+  "mixins": [
+    "tnteventborukva.mixins.json",
+    {
+      "config": "tnteventborukva.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "fabric": "*",
+    "minecraft": "1.21.1"
+  }
+}
